@@ -38,7 +38,6 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    /* text-decoration: none; */
     font-size: 18px;
     position: relative;
 }
@@ -124,4 +123,8 @@ nav ul li a {
     font-weight: 500;
     cursor: pointer;
     position: relative;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
 }
