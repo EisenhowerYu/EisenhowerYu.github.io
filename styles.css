@@ -38,12 +38,16 @@ nav ul li {
 
 nav ul li a {
     color: #fff;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 18px;
     position: relative;
 }
 
-nav ul li a::after {
+.link-animation {
+    text-decoration: none;
+}
+
+.link-animation::after {
     content: '';
     width: 0;
     height: 3px;
@@ -54,9 +58,8 @@ nav ul li a::after {
     transition: 0.5s;
 }
 
-nav ul li a:hover::after {
+.link-animation:hover::after {
     width: 100%;
-    
 }
 
 .header-text {
@@ -102,4 +105,23 @@ nav ul li a:hover::after {
 
 .about-col-2 {
     flex-basis: 60%;
+}
+
+.subtitle {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
 }
