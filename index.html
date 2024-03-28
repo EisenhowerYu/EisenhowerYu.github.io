@@ -20,7 +20,10 @@
             </nav>
             <div class="header-text">
                 <p>Data Engineer</p>
-                <h1>Hi, I'm <span>Eisen</span><br>Welcome to my page</h1>
+                <h1>
+                    Hi, I'm <span>Eisen</span><br>
+                    你好，我是<span>尤俊杰</span>
+                </h1>
             </div>
         </div>
     </div>
@@ -33,15 +36,15 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Hey there! I'm a data engineer residing in the Philippines, and I use my data analysis and technical skills to synthesize the data in our world. My life principles revolve around self-initiative, continuous improvement and value creation, which means I thrive the most in an environment where challenges and innovation are welcomed with curiosity. I strive to seek 1% improvements in my work life and social life, so I may give 100% of my all to the things I care about; my family, my friends, and my community. If you're looking for a motivated data engineer, you can count on me!</p>
 
                     <div class="tab-titles">
-                        <p class="tab-links active-link link-animation">Skills</p>
-                        <p class="tab-links link-animation">Experience</p>
-                        <p class="tab-links link-animation">Education</p>
+                        <p class="tab-links active-link link-animation" onclick="setActiveTab('skills')">Skills</p>
+                        <p class="tab-links link-animation" onclick="setActiveTab('experience')">Experience</p>
+                        <p class="tab-links link-animation" onclick="setActiveTab('education')">Education</p>
                     </div>
 
-                    <div class="tab-content active-tab">
+                    <div class="tab-content active-tab" id="skills">
                         <ul>
                             <li>
                                 <span>Programming Languages</span><br>
@@ -58,7 +61,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content">
+                    <div class="tab-content" id="experience">
                         <ul>
                             <li>
                                 <span>May 2023 - Present</span><br>
@@ -79,7 +82,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content">
+                    <div class="tab-content" id="education">
                         <ul>
                             <li>
                                 <span>Aug 2019 - Jul 2023</span><br>
@@ -90,9 +93,7 @@
                                 <span>Certificate Courses</span><br>
                                 Project Management Certificate | Google<br>
                                 Data Analytics Specialization | Google<br>
-                                CS50x Introduction to Computer Science | Harvard<br>
-                                Financial Markets (with Honors) | Yale University<br>
-                                Excel Skills for Business Specialization | Macquarie University<br>
+                                CS50x Introduction to Computer Science | Harvard University<br>
                             </li>
                             <li>
                                 <span>Organizations</span><br>
@@ -107,4 +108,22 @@
         </div>
     </div>
 </body>
+
+<script>
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-content");
+
+    function setActiveTab(tabName) {
+        for (tabLink of tabLinks) {
+            tabLink.classList.remove("active-link");
+        }
+        for (tabContent of tabContents) {
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+
+</script>
 </html>
