@@ -164,7 +164,13 @@ nav ul li a {
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-right: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.services-list div:hover {
+    background: #E67A7A;
+    transform: translateY(-10px);
 }
 
 .services-list div i {
