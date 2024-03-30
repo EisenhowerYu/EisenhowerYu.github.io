@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: #000000;
     color: #fff;
@@ -108,6 +112,10 @@ nav ul li a {
 
 .about-col-2 {
     flex-basis: 60%;
+}
+
+.about-col-2 p {
+    margin-top: 50px;
 }
 
 .subtitle {
@@ -421,5 +429,15 @@ nav .fas {
 
     .contact-left, .contact-right {
         flex-basis: 100%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    #header {
+        background-image: none;
+    }
+
+    .subtitle {
+        font-size: 40px;
     }
 }
