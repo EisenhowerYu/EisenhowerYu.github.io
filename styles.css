@@ -8,6 +8,7 @@
 body {
     background: #000000;
     color: #fff;
+    overflow-x: hidden;
 }
 
 #header {
@@ -27,6 +28,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-basis: 100%;
     flex-wrap: wrap;
 }
 
@@ -62,7 +64,7 @@ nav ul li a {
 }
 
 .header-text {
-    margin-top: 60vh;
+    margin-top: 40vh;
     font-size: 30px;
 }
 
@@ -266,6 +268,10 @@ nav ul li a {
 }
 
 /* Contact Me */
+#contact {
+    padding: 30px 0;
+}
+
 .contact-left {
     flex-basis: 35%;
 }
@@ -358,12 +364,15 @@ nav .fas {
     }
 
     .header-text {
-        margin-top: 10px;
         font-size: 16px;
     }
 
     .header-text h1 {
         font-size: 30px;
+    }
+
+    nav {
+        width: auto;
     }
 
     nav .fas {
@@ -412,6 +421,5 @@ nav .fas {
 
     .contact-left, .contact-right {
         flex-basis: 100%;
-
     }
 }
