@@ -331,15 +331,63 @@ form input, form textarea {
     outline: none;
     background: #262626;
     padding: 15px;
-    margin: 8px 0;
+    margin: 10px 0;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     border-radius: 8px;
 }
 
 form .btn2 {
     padding: 15px 60px;
     font-size: 18px;
-    margin-top: 10px;
+    margin-top: 20px;
     cursor: pointer;
+}
+
+/* Media query */
+nav .fas {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #header {
+        background-image: none;
+    }
+
+    .header-text {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    nav .fas {
+        display: block;
+        font-size: 18px;
+    }
+
+    nav ul {
+        background:#E67A7A;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;;
+    }
 }
