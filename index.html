@@ -13,15 +13,15 @@
         <div class="container">
             <nav>
                 <h2 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Eisenhower Yu</h2>
-                <ul>
+                <ul id="sideNav">
                     <li><a href="#" class="link-animation">Home</a></li>
                     <li><a href="#" class="link-animation">About</a></li>
                     <li><a href="#" class="link-animation">Services</a></li>
                     <li><a href="#" class="link-animation">Portfolio</a></li>
                     <li><a href="#" class="link-animation">Contact</a></li>
-                    <i class="fas fa-times"></i>
+                    <i class="fas fa-times" onclick="closeNav()"></i>
                 </ul>
-                <i class="fas fa-bars"></i>
+                <i class="fas fa-bars" onclick="openNav()"></i>
             </nav>
             <div class="header-text">
                 <p>Data Engineer</p>
@@ -37,7 +37,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="img/portrait.jpg" alt="My portrait">
+                    <img src="img/silag.png" alt="Me and my friend">
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
@@ -211,6 +211,15 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabName).classList.add("active-tab");
+    }
+
+    var sideNav = document.getElementById("sideNav");
+
+    function openNav() {
+        sideNav.style.right = "0";
+    }
+    function closeNav() {
+        sideNav.style.right = "-200px";
     }
 
 </script>

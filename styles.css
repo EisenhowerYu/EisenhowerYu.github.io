@@ -13,9 +13,9 @@ body {
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(img/wave.gif);
+    /* background-image: url(img/portrait-png.png); */
     background-size: contain;
-    background-position: right;
+    background-position:center;
     background-repeat: no-repeat;
 }
 
@@ -62,7 +62,7 @@ nav ul li a {
 }
 
 .header-text {
-    margin-top: 20%;
+    margin-top: 60vh;
     font-size: 30px;
 }
 
@@ -72,14 +72,16 @@ nav ul li a {
 }
 
 .header-text h1 span {
-    animation: color-change 30s infinite;
+    /* animation: color-change 30s infinite; */
+    color: #E67A7A;
 }
 
+/* 
 @keyframes color-change {
     0% { color: #E67A7A; }
     50% { color: #328686; }
     100% { color: #E67A7A; }
-}
+} */
 
 /* About */
 #about {
@@ -373,10 +375,12 @@ nav .fas {
         background:#E67A7A;
         position: fixed;
         top: 0;
-        right: 0;
+        right: -200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
     }
 
     nav ul li {
@@ -389,5 +393,25 @@ nav .fas {
         top: 25px;
         left: 25px;
         cursor: pointer;;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+
     }
 }
