@@ -36,6 +36,13 @@ nav {
     flex-wrap: wrap;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
 nav ul li {
     display: inline-block;
     list-style: none;
