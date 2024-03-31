@@ -21,7 +21,7 @@ nav .fas {
         align-items: normal;
         flex-basis: 100%;
         width: 100%;
-        z-index: 100;
+        z-index: 10;
         padding: 10vh 0 0 0;
     }
 
@@ -60,7 +60,7 @@ nav .fas {
         width: 200px;
         height: 100vh;
         padding-top: 50px;
-        z-index: 2;
+        z-index: 1000;
         transition: right 0.5s;
     }
 
