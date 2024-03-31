@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eisenhower Yu Portfolio Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
     <script src="https://kit.fontawesome.com/e278e002b6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -12,7 +13,7 @@
     <div id="header">
         <div class="container">
             <nav>
-                <img src="img/puff.png" alt="" style="height:50px;">
+                <div class="logo">eisen<span>.io</span></div>
                 <ul id="sideNav">
                     <li><a href="#header" class="link-animation">Home</a></li>
                     <li><a href="#about" class="link-animation">About</a></li>
@@ -24,15 +25,18 @@
                 <i class="fas fa-bars" onclick="openNav()"></i>
             </nav>
 
-            <div class="header-text">
-                <p>Data Engineer</p>
-                <h1>
-                    Hi, I'm <span>Eisen</span><br>
-                    你好，我是<span>尤俊杰</span><br>
-                    <br>
-                    <span>Welcome</span> to my page<br>
-                    <span>欢迎</span>来到我的网站
-                </h1>
+            <div class="row">
+                <div class="header-image">
+                    <img src="img/pink-portrait.png" class="round-image" alt="">
+                </div>
+
+                <div class="header-text">
+                    <p>Data Engineer</p>
+                    <h1>
+                        Hi, I'm <span>Eisen</span><br>
+                        你好，我是<span>尤俊杰</span><br>
+                    </h1>
+                </div>
             </div>
         </div>
     </div>
@@ -248,4 +252,5 @@
         .catch(error => console.error('Error!', error.message))
     })
 </script>
+
 </html>
