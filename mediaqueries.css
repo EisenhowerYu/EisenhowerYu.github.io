@@ -15,7 +15,7 @@ nav .fas {
     #header .row {
         position: relative;
     }
-
+/* 
     .row .header-image {
         position: absolute;
         align-items: normal;
@@ -23,6 +23,10 @@ nav .fas {
         width: 100%;
         z-index: 10;
         padding: 10vh 0 0 0;
+    } */
+
+    .row .header-image {
+        display: none;
     }
 
     .header-image img {
