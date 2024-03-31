@@ -45,6 +45,10 @@ a, .btn {
     border-radius: 20%;
 }
 
+.logo:hover {
+    cursor: default;
+}
+
 nav {
     display: flex;
     align-items: center;

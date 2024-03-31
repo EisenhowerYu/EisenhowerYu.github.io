@@ -33,7 +33,7 @@
                         <p>数据工程师</p>
                         <br>
                         <h1>
-                            Hi, I'm <span>Eisenhower Yu</span><br>
+                            Hi, I'm <span class="myName">Eisenhower Yu</span><br>
                             你好，我是<span>尤俊杰</span><br>
                         </h1>
                     </div>
@@ -213,50 +213,6 @@
     </div>
 </body>
 
-<script>
-
-    var tabLinks = document.getElementsByClassName("tab-links");
-    var tabContents = document.getElementsByClassName("tab-content");
-
-    function setActiveTab(tabName) {
-        for (tabLink of tabLinks) {
-            tabLink.classList.remove("active-link");
-        }
-        for (tabContent of tabContents) {
-            tabContent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabName).classList.add("active-tab");
-    }
-
-    var sideNav = document.getElementById("sideNav");
-
-    function openNav() {
-        sideNav.style.right = "0";
-    }
-    function closeNav() {
-        sideNav.style.right = "-200px";
-    }
-
-</script>
-
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzEkm66q0QYrJi93h0VlD3mH-_QaOZnZEzEKHAfZKK6WIcDAqqoSJjRJwxSQYe5MesM/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-
-    form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Thank you for your submission!"
-            setTimeout(() => {
-                msg.innerHTML = ""
-            }, 5000);
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-</script>
+<script src="script.js"></script>
 
 </html>
