@@ -10,7 +10,6 @@
 <body>
     <!-- Header -->
     <div id="header">
-
         <div class="container">
             <nav>
                 <img src="img/puff.png" alt="" style="height:50px;">
@@ -173,6 +172,7 @@
                     </div>
                 </div>
             </div>
+            <a href="" class="btn">See More</a>
         </div>
     </div>
     <!-- Contact Me -->
@@ -190,11 +190,12 @@
                     <a href="img/Eisenhower Yu.pdf" class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
-                        <input type="text" name="name" placeholder="Your name" required>
-                        <input type="email" name="email" placeholder="Email" required>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Email" required>
                         <textarea name="Message" rows="10" placeholder="Your message..."></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
+                        <span id="msg"></span>
                     </form>
                 </div>
             </div>
@@ -227,5 +228,24 @@
         sideNav.style.right = "-200px";
     }
 
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzEkm66q0QYrJi93h0VlD3mH-_QaOZnZEzEKHAfZKK6WIcDAqqoSJjRJwxSQYe5MesM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank you for your submission!"
+            setTimeout(() => {
+                msg.innerHTML = ""
+            }, 5000);
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
 </script>
 </html>

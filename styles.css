@@ -323,16 +323,22 @@ nav ul li a {
     display: block;
     margin: 50px auto;
     width: fit-content;
-    background:#E67A7A;
+    background:#000;
     border: 1px solid #E67A7A;
     padding: 15px 50px;
     border-radius: 8px;
     text-decoration: none;
     color: #fff;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background: #E67A7A;
 }
 
 .btn.btn2 {
     display: inline-block;
+    background:#E67A7A;
     transition: transform 0.5s;
 }
 
@@ -365,6 +371,12 @@ form .btn2 {
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+#msg {
+    color:#ababab;
+    margin-top: -30px;
+    display: block;
 }
 
 /* Media query */
