@@ -22,7 +22,7 @@ nav .fas {
         flex-basis: 100%;
         width: 100%;
         z-index: 100;
-        padding: 5vh 0 0 0;
+        padding: 10vh 0 0 0;
     }
 
     .header-image img {
@@ -34,7 +34,7 @@ nav .fas {
     .row .header-text {
         position: absolute;
         flex-basis: 100%;
-        font-size: 25px;
+        font-size: 20px;
         align-items: end;
         padding-bottom: 10vh;
     }
@@ -80,7 +80,7 @@ nav .fas {
 
 @media only screen and (max-width: 600px) {
 
-    .header-text {
+    .row .header-text {
         font-size: 16px;
         flex-basis: 100%;
     }
