@@ -4,47 +4,86 @@ nav .fas {
     display: none;
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1600px) {
+
+    .row .header-image img {
+        height: 400px;
+        width: 400px;
+    }
+
     .row .header-text {
-        flex-basis: 100%;
+        font-size: 25px;
+    }
+
+    .header-text h1 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+
+    .row .header-image img {
+        height: 350px;
+        width: 350px;
+    }
+
+    .row .header-text {
+        font-size: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+
+    .row .header-image img {
+        height: 300px;
+        width: 300px;
     }
 }
 
 @media only screen and (max-width: 1000px) {
 
-    #header .row {
-        position: relative;
+    .row .header-text {
+        width: 100%;
     }
-/* 
+
     .row .header-image {
-        position: absolute;
-        align-items: normal;
+        display: flex;
         flex-basis: 100%;
         width: 100%;
-        z-index: 10;
-        padding: 10vh 0 0 0;
-    } */
-
-    .row .header-image {
-        display: none;
+        height: fit-content;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
     }
 
-    .header-image img {
-        height: 250px;
-        width: 250px;
-        border-radius: 10%;
+    .row .header-image img {
+        height: 50vw;
+        width: 50vw;
     }
 
     .row .header-text {
-        position: absolute;
         flex-basis: 100%;
         font-size: 20px;
         align-items: end;
-        padding-bottom: 10vh;
+        margin-top: 5vh;
+        padding: 2vh;
+        border-radius: 5%;
+        height: fit-content;
+    }
+
+    .row .header-text div {
+        margin: auto;
+        text-align: center;
+        justify-content: center;
     }
 
     .header-text h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
     
     nav {
@@ -110,5 +149,56 @@ nav .fas {
 
     .contact-left, .contact-right {
         flex-basis: 100%;
+    }
+
+    .row .header-image {
+        display: flex;
+        flex-basis: 100%;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+
+    .row .header-text {
+        font-size: 16px;
+        flex-basis: 100%;
+    }
+
+    .header-text h1 {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+
+    .row .header-image {
+        display: flex;
+        flex-basis: 100%;
+        height: fit-content;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10vh;
     }
 }

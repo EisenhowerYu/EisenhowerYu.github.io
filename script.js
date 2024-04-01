@@ -42,14 +42,14 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 })
 
 // Change header text on width
-window.addEventListener('resize', function() {
-    var textDiv = document.querySelector('.myName');
-    if (window.innerWidth <= 850) {
-        textDiv.textContent = 'Eisen';
-    } else {
-        textDiv.textContent = 'Eisenhower Yu';
-    }
-});
+// window.addEventListener('resize', function() {
+//     var textDiv = document.querySelector('.myName');
+//     if (window.innerWidth <= 1600) {
+//         textDiv.textContent = 'Eisen';
+//     } else {
+//         textDiv.textContent = 'Eisenhower Yu';
+//     }
+// });
 
 // Call the event listener once to set the initial text based on screen size
 window.dispatchEvent(new Event('resize'));
