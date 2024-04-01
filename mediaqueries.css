@@ -85,6 +85,10 @@ nav .fas {
     .header-text h1 {
         font-size: 40px;
     }
+
+    .logo {
+        height: 18px;
+    }
     
     nav {
         width: auto;
