@@ -8,7 +8,7 @@
 
 body {
     font-family:'Poppins', sans-serif;
-    background: #000000;
+    background: #000;
     color: #fff;
     overflow-x: hidden;
 }
@@ -36,8 +36,9 @@ a, .btn {
 }
 
 .logo {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 32px;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px; */
+    height: 32px;
 }
 
 .logo span {
@@ -101,16 +102,15 @@ nav ul li a {
 }
 
 .header-image {
-    flex-basis: 40%;
+    flex-basis: 45%;
     display: flex;
-    justify-content: center; 
+    justify-content: right; 
     align-items: center;
-    padding: 0px 100px;
 }
 
 .header-text {
     font-size: 30px;
-    flex-basis: 40%;
+    flex-basis: 45%;
     display: flex;
     align-items: center;
 }
