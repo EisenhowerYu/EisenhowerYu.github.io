@@ -26,6 +26,17 @@ a, .btn {
     transition: all 300ms ease;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(-5px);
+}
+
+.fade-in-show {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s ease-in;
+}
+
 .container {
     padding: 10px 10%;
 }

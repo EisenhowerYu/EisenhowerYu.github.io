@@ -54,3 +54,21 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 // Call the event listener once to set the initial text based on screen size
 window.dispatchEvent(new Event('resize'));
 
+// Fade in animation
+window.addEventListener('scroll', fadeIn);
+
+let eArr = document.querySelectorAll('.fade-in');
+
+function fadeIn() {
+    for (var i = 0; i < eArr.length; i++) {
+        var e = eArr[i];
+        var distInView = e.getBoundingClientRect().top - window.innerHeight + 20;
+        if (distInView < 0) {
+            e.classList.add('fade-in-show');
+        } 
+        // else {
+        //     e.classList.remove('fade-in-show');
+        // }
+    }
+}
+fadeIn();
