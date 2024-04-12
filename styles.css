@@ -28,12 +28,12 @@ a, .btn {
 
 .fade-in {
     opacity: 0;
-    transform: translateY(-5px);
+    transform: translateX(5px);
 }
 
 .fade-in-show {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateX(0px);
     transition: all 0.5s ease-in;
 }
 
