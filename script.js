@@ -51,6 +51,16 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 //     }
 // });
 
+// Change header text on width
+window.addEventListener('resize', function() {
+    var textDiv = document.querySelector('.about-extra-text');
+    if (window.innerWidth <= 650) {
+        textDiv.textContent = '';
+    } else {
+        textDiv.textContent = 'My life principles revolve around self-initiative, continuous improvement and value creation, which means I thrive in an environment where challenges and innovation are welcomed with curiosity.';
+    }
+});
+
 // Call the event listener once to set the initial text based on screen size
 window.dispatchEvent(new Event('resize'));
 
