@@ -55,9 +55,9 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 window.addEventListener('resize', function() {
     var textDiv = document.querySelector('.about-extra-text');
     if (window.innerWidth <= 650) {
-        textDiv.textContent = '';
+        textDiv.style.display = 'none';
     } else {
-        textDiv.textContent = 'My life principles revolve around self-initiative, continuous improvement and value creation, which means I thrive in an environment where challenges and innovation are welcomed with curiosity.';
+        textDiv.style.display = '';
     }
 });
 
